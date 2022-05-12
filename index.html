@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="style.css">
-    <title>Yummy Bakery</title>
+    <title>Learn to code</title>
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
-            <a href="#" class="navbar-brand">Yhamei's Bakery</a>
+            <a href="#" class="navbar-brand">Frontend Bootcamp</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon">
 
@@ -47,13 +47,13 @@
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <div>
-                    <h1>Delicious <span class="text-warning">Filipino Sweets!</span>
+                    <h1>Learn <span class="text-warning">Web Development!</span>
                     </h1>
                     <p class="lead my-4">
-                        Delictable home made sweets! Satisfy the sweet tooth cravings with some delicious cheesy filled
-                        ube pan de sal or any other sweets we offer!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, beatae!
                     </p>
-                    <button class="btn btn-primary btn-large">See our Menu!</button>
+                    <button class="btn btn-primary btn-large" data-bs-toggle="modal" data-bs-target="#enroll">Start
+                        Enrollment</button>
                 </div>
                 <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="">
             </div>
@@ -390,6 +390,44 @@
             </a>
         </div>
     </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contact Info</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Fill out this form and we will contact you</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="first-name" class="col-form-label">First Name</label>
+                            <input type="text" class="form-control" id="first-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="last-name" class="col-form-label">Last Name</label>
+                            <input type="text" class="form-control" id="last-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email</label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="col-form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="phone">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
